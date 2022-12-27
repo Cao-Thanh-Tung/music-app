@@ -1,5 +1,5 @@
 {
-  "name": "qmusic",
+  "name": "lookforaroomforrent",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -34,5 +34,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "init version",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cao-Thanh-Tung/LookForARoomForRent.git"
+  },
+  "author": "tungct",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cao-Thanh-Tung/LookForARoomForRent/issues"
+  },
+  "homepage": "https://github.com/Cao-Thanh-Tung/LookForARoomForRent#readme"
 }
