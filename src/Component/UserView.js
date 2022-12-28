@@ -2,7 +2,7 @@ function UserView() {
   return (
     <>
       <p>Name</p>
-      <image></image>
+      <img class="w-10 h-10 rounded-full" src="" alt="Rounded avatar" />
     </>
   );
 }
