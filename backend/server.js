@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
+const myenv = require("dotenv").config();
 const port = 8000;
-// app.use(express.json());
 app.use(morgan("tiny"));
 app.get("/", (req, res) => {
   // res.send("hello");
@@ -11,6 +11,6 @@ app.get("/", (req, res) => {
   });
   res.end();
 });
-app.listen(port, function () {
-  console.log("Your app running on port " + port);
+app.listen(process.env.PORT || 3000, function () {
+  console.log("Your app running on port " + process.env.PORT || 3000);
 });
