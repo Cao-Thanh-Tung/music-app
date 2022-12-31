@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const myenv = require("dotenv").config();
 const port = 8000;
 app.use(morgan("tiny"));
+app.use(express.json());
 app.get("/", (req, res) => {
   // res.send("hello");
   res.send({
