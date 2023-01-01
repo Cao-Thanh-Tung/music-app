@@ -12,5 +12,11 @@ const service = {
   saveUser(phone, name, pass) {
     return true;
   },
+  checkUser(phone, password) {
+    return true;
+  },
+  getUser(phone, password) {
+    return "jwt";
+  },
 };
 module.exports = service;
