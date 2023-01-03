@@ -18,5 +18,9 @@ const service = {
   getUser(phone, password) {
     return "jwt";
   },
+  // search request
+  getShortInfo(info) {
+    return [];
+  },
 };
 module.exports = service;
