@@ -1,7 +1,8 @@
 const express = require("express");
-const app = express();
+const router = require("./src/router");
 const morgan = require("morgan");
-const myenv = require("dotenv").config();
+require("dotenv").config();
+const app = express();
 const port = 8000;
 app.use(morgan("tiny"));
 app.use(express.json());
@@ -11,13 +12,7 @@ app.use(
     extended: true,
   })
 );
-app.get("/", (req, res) => {
-  // res.send("hello");
-  res.send({
-    name: "thanh",
-  });
-  res.end();
-});
+app.use("/api", router);
 app.listen(process.env.PORT || 3000, function () {
   console.log("Your app running on port " + process.env.PORT || 3000);
 });
