@@ -1,3 +1,5 @@
+const { createGroup } = require("../controller/GroupController");
+
 const service = {
   SuccessCode: 1,
   ServerErrorCode: 2,
@@ -25,5 +27,9 @@ const service = {
   getFullInfo(conditionInfo) {
     return {};
   },
+  validateUser(userInfo) {
+    return true;
+  },
+  createGroup(info) {},
 };
 module.exports = service;
