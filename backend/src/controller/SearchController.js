@@ -1,12 +1,12 @@
 const service = require("../service/Service");
 const SearchController = {
   search(req, res) {
-    filterInfo = req.body;
+    let filterInfo = req.body;
     res.send(service.getShortInfo(filterInfo));
     res.end();
   },
   showDetailInfo(req, res) {
-    conditionInfo = req.body;
+    let conditionInfo = req.body;
     req.send(service.getFullInfo(conditionInfo));
   },
 };
