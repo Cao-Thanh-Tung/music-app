@@ -19,8 +19,11 @@ const service = {
     return "jwt";
   },
   // search request
-  getShortInfo(info) {
+  getShortInfo(conditionInfo) {
     return [];
+  },
+  getFullInfo(conditionInfo) {
+    return {};
   },
 };
 module.exports = service;
