@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const groupRouter = require("./GroupRouter");
+const hostRouter = require("./HostRouter");
 const registerController = require("../controller/RegisterController");
 const loginController = require("../controller/LoginController");
 const searchController = require("../controller/SearchController");
@@ -9,5 +10,5 @@ router.post("/login", loginController.login);
 router.get("/search", searchController.search);
 router.get("/partinfo", searchController.showDetailInfo);
 router.use("/group", groupRouter);
-
+router.use("/host", hostRouter);
 module.exports = router;
