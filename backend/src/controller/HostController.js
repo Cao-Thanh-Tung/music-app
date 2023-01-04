@@ -36,7 +36,7 @@ const HostController = {
     if (service.validateUser(userInfo)) {
       if (service.isExistRoom(serviceInfo)) {
         if (service.isHost(userInfo, serviceInfo)) {
-          service.createRoom(userInfo, serviceInfo);
+          service.rentResponse(userInfo, serviceInfo);
           res.send(service.SuccessCode);
           res.end();
           return;
