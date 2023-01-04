@@ -30,6 +30,44 @@ const service = {
   validateUser(userInfo) {
     return true;
   },
+  // Group controller
   createGroup(info) {},
+  isExistGroup(serviceInfo) {
+    return true;
+  },
+  isFullGroup(serviceInfo) {
+    return false;
+  },
+  createJoinRequest(userInfo, serviceInfo) {},
+  getGroupInfo(groupID) {
+    return {};
+  },
+  isUserInGroup(userInfo, serviceInfo) {
+    return true;
+  },
+  deleteUserFromGroup(userInfo, serviceInfo) {},
+  isLead(userInfo, serviceInfo) {
+    return true;
+  },
+  deleteGroup(serviceInfo) {},
+  isExistJoinRequest(userInfo, serviceInfo) {
+    return true;
+  },
+  addMember(serviceInfo) {},
+  isExistRoom(serviceInfo) {
+    return true;
+  },
+  createGroupRentRequest(serviceInfo) {},
+
+  //Host controller
+  createRoom(serviceInfo) {},
+  updateRoom(serviceInfo) {},
+  deleteRoom(serviceInfo) {},
+  isHost(userInfo, serviceInfo) {
+    return true;
+  },
+  rentResponse(userInfo, serviceInfo) {},
+  //Other controller
+  createRentRequest(userInfo, serviceInfo) {},
 };
 module.exports = service;

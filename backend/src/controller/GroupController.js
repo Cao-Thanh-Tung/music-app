@@ -37,7 +37,7 @@ const GroupController = {
     let serviceInfo = req.body.serviceInfo;
     if (service.validateUser(userInfo)) {
       if (service.isExistGroup(serviceInfo)) {
-        if (service.isUserInGroup(serviceInfo)) {
+        if (service.isUserInGroup(userInfo, serviceInfo)) {
           service.deleteUserFromGroup(userInfo, serviceInfo);
           res.send(service.SuccessCode);
           res.end();
